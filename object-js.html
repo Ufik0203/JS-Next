@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Object</title>
+</head>
+
+<body>
+    <h1>OBJECT JAVA SCRIPT</h1>
+    <script>
+        // Penulisan Object
+        let tipeObject = {
+
+        }
+        console.log(tipeObject)
+        // Object
+        let mobil = {
+            merk: 'Toyota',
+            jenis: 'Supra'
+        }
+        console.log(mobil);
+
+        // Object tambah properti
+        let mobil1 = {
+            merk: 'Honda',
+            jenis: 'Civic'
+        }
+        mobil1.harga = 10
+        console.log(mobil1);
+
+        let hewan = {
+            nama: 'kucing',
+            suara: 'meow'
+        }
+        console.log(hewan);
+        hewan.nama = 'Harimau',
+            hewan.suara = 'Rawr'
+        console.log(hewan);
+
+        // Object Method
+        let mobil2 = {
+            nama: 'Pajero Sport',
+            merk: 'Mitsubisi',
+            harga: 800000000,
+            mesin: 'Diesel',
+            hidupkan: () => {
+                return "Mesin sudah di hidupkan";
+            },
+        }        
+        console.log(mobil2.merk + " " + mobil2.nama);
+        console.log(mobil2.hidupkan());
+        console.log("Nama: ", mobil2["nama"]);
+
+        //For in Operator
+        for(props in mobil2) {
+            console.log(props + " = " + mobil2[props]);
+        }
+
+    </script>
+</body>
+
+</html>

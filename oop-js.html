@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript OOP</title>
+</head>
+
+<body>
+    <h1>OOP JAVA SCRIPT</h1>
+    <script>
+        class Alatmasak {
+            constructor(nama) {
+                this.nama = nama
+            }
+            active() {
+                return `Gunakan ${this.nama} telah aktif`
+            }
+            memasask(bahan) {
+                return `Menyiapkan ${bahan} dengan menggunakan ${this.nama}`
+            }
+        }
+        let alatmasak1 = new Alatmasak("Kompor")
+        console.log(alatmasak1.active());
+        console.log(alatmasak1.memasask("ayam"));
+        let alatmasak2 = new Alatmasak("ricecooker")
+        console.log(alatmasak2.active());
+        console.log(alatmasak2.memasask("nasi"));
+    </script>
+</body>
+
+</html>
